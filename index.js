@@ -6,6 +6,7 @@ app.use(express.urlencoded({ extended: true }))
 
 app.post('/', function (req, res) {
     console.log(`Request : ${JSON.stringify(req.params)} - ${JSON.stringify(req.query)} - ${JSON.stringify(req.body)} `);
+    console.log(`Complete Request : ${JSON.stringify(req)} `);
     res.send('OK')
 
 })
